@@ -10,7 +10,7 @@ import (
 
 type Employee struct {
 	gorm.Model
-	Name       string `valid:"required~Nam cannot be null"`
+	Name       string `valid:"required~Name cannot be null"`
 	Email      string
 	EmployeeID string `valid:"matches([JMS][0-9]{8}$)"`
 }
